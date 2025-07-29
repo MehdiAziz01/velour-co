@@ -48,14 +48,14 @@ export default function Navigation({ currentPage }: { currentPage: string }) {
             <Link href="/" onClick={closeMenu}>
               <div className="flex items-center group cursor-pointer">
                 <div className={`transition-all duration-500 ease-out ${
-                  hasScrolled ? 'opacity-0 scale-95 -translate-y-1' : 'opacity-100 scale-100 translate-y-0'
+                  hasScrolled && !isMenuOpen ? 'opacity-0 scale-95 -translate-y-1' : 'opacity-100 scale-100 translate-y-0'
                 }`}>
                   <h1 className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent group-hover:from-gray-700 group-hover:to-gray-500 transition-all duration-300">
                     Velour & Co.
                   </h1>
                 </div>
                 <div className={`absolute inset-0 flex items-center transition-all duration-500 ease-out ${
-                  hasScrolled ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 translate-y-1'
+                  hasScrolled && !isMenuOpen ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 translate-y-1'
                 }`}>
                   <Image 
                     src="/velourlogo.svg" 
@@ -160,12 +160,12 @@ export default function Navigation({ currentPage }: { currentPage: string }) {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`lg:hidden transition-all duration-300 ease-in-out ${
+        <div className={`lg:hidden transition-all duration-300 ease-in-out relative z-10 ${
           isMenuOpen 
             ? 'max-h-96 opacity-100 translate-y-0' 
             : 'max-h-0 opacity-0 -translate-y-4'
         } overflow-hidden`}>
-          <div className="py-4 space-y-2 border-t border-gray-200">
+          <div className="py-4 space-y-2 border-t border-gray-200 bg-white/95 backdrop-blur-md">
             <Link
               href="/about"
               onClick={closeMenu}

@@ -255,7 +255,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 text-center">
               <CardHeader>
                 <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
@@ -283,38 +283,6 @@ export default function About() {
                 </CardDescription>
                 <CardDescription className="text-gray-600">
                   Executive leader driving strategic vision and operational excellence across all business functions.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-
-            <Card className="border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 text-center">
-              <CardHeader>
-                <div className="w-24 h-24 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">HK</span>
-                </div>
-                <CardTitle className="text-xl text-black">Hafsah Kazi</CardTitle>
-                <CardDescription className="text-gray-600 font-medium mb-3">
-                  Media Director
-                </CardDescription>
-                <CardDescription className="text-gray-600">
-                  Creative strategist who leads our media initiatives, content creation, and brand storytelling
-                  to create compelling narratives that resonate.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-
-            <Card className="border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 text-center">
-              <CardHeader>
-                <div className="w-24 h-24 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">AK</span>
-                </div>
-                <CardTitle className="text-xl text-black">Anaya Khan</CardTitle>
-                <CardDescription className="text-gray-600 font-medium mb-3">
-                  Growth Director
-                </CardDescription>
-                <CardDescription className="text-gray-600">
-                  Growth specialist focused on scaling strategies, performance optimization, and driving
-                  measurable results that accelerate business success.
                 </CardDescription>
               </CardHeader>
             </Card>
